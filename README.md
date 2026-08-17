@@ -124,13 +124,13 @@ For each component ask:
 - What privileges does the tool have?
 - Can the AI be convinced to leak data or perform an action?
 
-## 3. Must-know concepts
+## Must know concepts
 
 - **LLM**
 - **RAG**
 - **MCP**
 
-# LLM fundamentals
+### LLM fundamentals
 
 Understand:
 
@@ -142,7 +142,7 @@ Understand:
 - alignment/guardrails
 - model behavior vs application behavior
 
-# Prompt injection
+### Prompt injection
 
 Be able to distinguish:
 
@@ -153,7 +153,7 @@ Be able to distinguish:
 - prompt extraction / system prompt leakage
 - encoding/obfuscation as an attack mechanism
 
-# RAG
+### RAG
 
 Understand:
 
@@ -166,7 +166,7 @@ Ask:
 - Can data and instructions become confused?
 - Can retrieval be manipulated to expose sensitive information?
 
-# MCP and tools
+### MCP and tools
 
 Understand:
 
@@ -176,6 +176,6 @@ Understand:
 - what permissions the tool has
 - whether a tool description can be manipulated
 
-High-value question:
+High value question:
 
 > **Can I make the model misunderstand what this tool does, trust malicious instructions, or invoke something with unintended parameters?**
