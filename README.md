@@ -91,3 +91,35 @@ Mapped to MITRE ATLAS / OWASP LLM Top 10 / NVIDIA AI Kill Chain thinking.
 7. Schedule the exam when you can dedicate a full focused 24 h + report time.
 8. Re-read the official Exam Guide the day before.
 
+## Study mindset
+
+---
+
+Do not reduce preparation to:
+
+> “How do I jailbreak ChatGPT?”
+
+Instead:
+
+> **What is the complete AI system, what does it trust, what data does it consume, what tools can it invoke, and how can attacker-controlled input cross those trust boundaries?**
+
+A useful generic architecture to reason about is:
+
+**User / attacker input**  
+→ **application logic**  
+→ **system prompt / instructions**  
+→ **LLM**  
+→ **RAG / retrieved documents**  
+→ **tools / MCP servers / APIs**  
+→ **credentials, data, external actions**
+
+For each component ask:
+
+- Can I control it?
+- Can I influence it indirectly?
+- What instructions does it trust?
+- What data does it retrieve?
+- Can retrieved content become instructions?
+- Can I manipulate a tool description?
+- What privileges does the tool have?
+- Can the AI be convinced to leak data or perform an action?
