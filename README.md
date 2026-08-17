@@ -1,7 +1,7 @@
-# OSAI (AI-300) Guide
+# OSAI Advanced AI Red Teaming (AI-300) Guide
 Intended as a cheat sheet for people preparing for the exam
 
-## Official Sources (Always Check These First)
+## Official Sources
 
 - **Exam Guide**: https://help.offsec.com/hc/en-us/articles/46593096734612-OSAI-Exam-Guide
 - **Exam FAQ**: https://help.offsec.com/hc/en-us/articles/46669767163156-OSAI-Advanced-AI-Red-Teaming-Exam-FAQ
