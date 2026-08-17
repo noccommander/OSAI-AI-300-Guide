@@ -123,3 +123,59 @@ For each component ask:
 - Can I manipulate a tool description?
 - What privileges does the tool have?
 - Can the AI be convinced to leak data or perform an action?
+
+## 3. Must-know concepts
+
+- **LLM**
+- **RAG**
+- **MCP**
+
+# LLM fundamentals
+
+Understand:
+
+- model vs application
+- inference
+- prompts and system instructions
+- context windows
+- hallucination vs security vulnerability
+- alignment/guardrails
+- model behavior vs application behavior
+
+# Prompt injection
+
+Be able to distinguish:
+
+- **Direct prompt injection** — attacker talks directly to the model and tries to override instructions.
+- **Indirect prompt injection** — malicious instructions arrive through content the AI consumes, such as documents, webpages, emails, databases, or retrieved RAG content.
+- **Single-turn attacks**
+- **Multi-turn attacks**
+- prompt extraction / system prompt leakage
+- encoding/obfuscation as an attack mechanism
+
+# RAG
+
+Understand:
+
+**Document → embedding/index → retrieval → context → LLM decision**
+
+Ask:
+
+- What if an attacker can insert or modify a document?
+- What if malicious content is retrieved?
+- Can data and instructions become confused?
+- Can retrieval be manipulated to expose sensitive information?
+
+# MCP and tools
+
+Understand:
+
+- which tool the LLM calls
+- what the tool does
+- what arguments are passed
+- what permissions the tool has
+- whether a tool description can be manipulated
+
+High-value question:
+
+> **Can I make the model misunderstand what this tool does, trust malicious instructions, or invoke something with unintended parameters?**
