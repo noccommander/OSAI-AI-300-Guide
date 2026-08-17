@@ -179,3 +179,59 @@ Understand:
 High value question:
 
 > **Can I make the model misunderstand what this tool does, trust malicious instructions, or invoke something with unintended parameters?**
+
+
+---
+
+
+## Operator model:
+
+**Understand the AI application → map trust boundaries → direct AI efficiently → recognize when it is wrong → pivot → collect reproducible evidence → document the chain.**
+
+### Phase A — Recon
+
+**Identify applications → find AI endpoints → fingerprint model/provider → discover tools/agents → inspect headers/repositories/config**
+
+### Phase B — Map trust
+
+**User input → LLM → retrieval → memory → tools → agent → external service → privileged environment**
+
+### Phase C — Attack
+
+Choose the relevant attack surface:
+
+- prompt
+- retrieval
+- memory
+- agent metadata
+- tool metadata
+- tool chaining
+- embedding/vector layer
+- model artifact
+- supply chain
+- infrastructure
+
+### Phase D — Validate
+
+Ask:
+
+> **Did I actually achieve the intended state?**
+
+Not:
+
+> “Did my command produce an interesting output?”
+
+### Phase E — Evidence
+
+Capture:
+
+- command
+- request
+- response
+- resulting state
+- credentials/data
+- screenshot/log
+
+### Phase F — Document
+
+Write for reproduction.
