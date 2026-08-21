@@ -70,8 +70,7 @@ Mapped to MITRE ATLAS / OWASP LLM Top 10 / NVIDIA AI Kill Chain thinking.
 ## From People Who Finished / Passed
 
 - **Build and iterate your own AI agent/harness early** (before or during Capstone). Start small, then improve after each challenge. Bigger is not always better.
-- Most popular stack in the channel: **Claude (especially Claude Code / Opus / Sonnet)**. Codex also heavily used. Others: GPT, Gemini, OffSec KAI, custom harnesses (PentestGPT + HexStrike mentioned, mixed results).
-- High token burn is normal (one public review reported ~4.1 **billion** tokens across prep + exam). Budget for rate limits / subscriptions / Cyber Verification Program (Anthropic CVP) if using Claude.
+- One user reported passing the exam using DeepSeek V4 Pro, spending only about $4 in API tokens. They also reported zero refusals, compared with frequent refusals using Opus 4.8/5 even with Anthropic's CVP in place. Their setup was the direct DeepSeek API, using its Anthropic-compatible endpoint with Claude Code (CC).
 - Do **all** exercises + all challenge labs (many recommend doing the challenges twice). They are clearer / more guided than the exam and excellent for refining your agent and workflow.
 - Take structured notes + summaries of every module — feed them into your agent’s knowledge base / system prompt.
 - **Enumeration and loot management** are the biggest time sinks on the exam. Track where every finding came from and what you tested. Poor tracking costs hours.
