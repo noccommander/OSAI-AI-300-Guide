@@ -70,7 +70,11 @@ Mapped to MITRE ATLAS / OWASP LLM Top 10 / NVIDIA AI Kill Chain thinking.
 ## From People Who Finished / Passed
 
 - **Build and iterate your own AI agent/harness early** (before or during Capstone). Start small, then improve after each challenge. Bigger is not always better.
+  - Don't start from zero: fork a public offensive skill set (e.g. [Claude-Red](https://github.com/SnailSploit/Claude-Red)) and add one skill per course module.
+  - Run parallel subagents instead of one sequential thread.
+  - Give each target its own folder and notes in the agent's instructions, so the two attack chains don't get mixed up.
 - One user reported passing the exam using DeepSeek V4 Pro, spending only about $4 in API tokens. They also reported zero refusals, compared with frequent refusals using Opus 4.8/5 even with Anthropic's CVP in place. Their setup was the direct DeepSeek API, using its Anthropic-compatible endpoint with Claude Code (CC).
+  - Setup guide: [DeepSeek with Claude Code](https://api-docs.deepseek.com/quick_start/agent_integrations/claude_code/).
 - Do **all** exercises + all challenge labs (many recommend doing the challenges twice). They are clearer / more guided than the exam and excellent for refining your agent and workflow.
 - Take structured notes + summaries of every module — feed them into your agent’s knowledge base / system prompt.
 - **Enumeration and loot management** are the biggest time sinks on the exam. Track where every finding came from and what you tested. Poor tracking costs hours.
@@ -84,7 +88,7 @@ Mapped to MITRE ATLAS / OWASP LLM Top 10 / NVIDIA AI Kill Chain thinking.
 ## Study Recommendations
 
 1. Read the material properly (don’t pure AI-summarize everything).
-2. Complete every exercise and the 5 challenge labs; use them to stress-test and improve your agent.
+2. Complete every exercise and the 5 challenge labs; use them to stress-test and improve your agent. For extra reps: [Lakera Agent Breaker](https://play.lakera.ai/agent-breaker) and [PortSwigger LLM labs](https://portswigger.net/web-security/llm-attacks).
 3. Build the agent early, iterate hard, keep a clean knowledge base of notes.
 4. Practice strict loot/enumeration hygiene.
 5. Get comfortable directing AI for recon, payload crafting, troubleshooting, and interpreting AI-specific vectors.
